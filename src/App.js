@@ -1,9 +1,9 @@
-import ProductDetail from "./component/productDetail/ProductDetail"
+import BuyNow from "./component/buyNow/BuyNow"
 
 function App() {
   return (
     <div>
-      <ProductDetail />
+      <BuyNow />
     </div>
   )
 }
