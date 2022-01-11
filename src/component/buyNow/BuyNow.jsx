@@ -46,6 +46,7 @@ const BuyNow = () => {
                 Pay digitally with SMS Pay Link. Cash may not be accepted in
                 COVID restricted areas
               </span>
+              <h1>hello</h1>
             </div>
           </div>
         </div>
