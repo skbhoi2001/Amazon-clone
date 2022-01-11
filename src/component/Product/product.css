@@ -8,7 +8,7 @@ body {
   height: 530px;
 }
 .product_image {
-  width: 100%;
+  width: 67%;
   color: #0f1111;
   font-size: 16px;
   line-height: 24px;
@@ -66,4 +66,11 @@ body {
 .product_span1 {
   font-weight: 700;
   word-spacing: 0.2rem;
+}
+.grid_boxing {
+  display: grid;
+  width: 80%;
+  grid-gap: 89px;
+  grid-template-columns: 25% 25% 25%;
+  margin: auto;
 }
