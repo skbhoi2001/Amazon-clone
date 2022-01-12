@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './LandingPage/Component1/Component1.css';
+import ImageSlider from './LandingPage/Component1/ImageSlider';
+import { SliderData } from './LandingPage/Component1/SliderData';
+import { FetchRequest } from './LandingPage/TodaysDeal/FetchRequest';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <ImageSlider slides={SliderData}/>
+    <FetchRequest/>
+   </>
+    )
+  
 }
 
 export default App;
