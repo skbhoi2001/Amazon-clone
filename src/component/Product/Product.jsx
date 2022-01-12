@@ -18,7 +18,7 @@ const Product = () => {
     <div className="grid_boxing">
       {products.map(product => {
         return (
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/product/${product.product_id}`}>
             <div className="product_container">
               <img
                 className="product_image"
