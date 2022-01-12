@@ -8,3 +8,11 @@
   list-style: none;
   margin: 5px;
 }
+button {
+  background-color: rgb(246, 204, 101);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: 500;
+}

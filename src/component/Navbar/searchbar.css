@@ -1,0 +1,22 @@
+.searchItem{
+    position: absolute;
+    text-align: left;
+    padding: 10px; 
+    width: 600px;
+}
+.searchContent{
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+}
+.inputBox{
+    color: black;
+    width: 700px;
+    font-size:20px;
+    padding: 5px;
+}
+.srcBtn{
+    color: black;
+    padding-top: 7px;
+    padding-right: 3px;
+}
