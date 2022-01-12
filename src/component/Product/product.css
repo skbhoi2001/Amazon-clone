@@ -74,3 +74,6 @@ body {
   grid-template-columns: 25% 25% 25%;
   margin: auto;
 }
+a {
+  text-decoration: none;
+}
