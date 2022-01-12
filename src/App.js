@@ -1,9 +1,9 @@
-import ProductDetail from "./component/productDetail/ProductDetail"
+import AllRouter from "./router/AllRouter"
 
 function App() {
   return (
     <div>
-      <ProductDetail />
+      <AllRouter />
     </div>
   )
 }
