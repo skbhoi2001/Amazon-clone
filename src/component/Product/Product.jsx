@@ -9,18 +9,19 @@ import axios from "axios"
 import { getProducts } from "../../reduxs/actions/productActions"
 
 import Pagination1 from "../pagination/Pagination"
+import Navbar from "../Navbar/Navbar"
 
 const Product = () => {
   const products = useSelector(state => state.allProducts.products)
 
   const [currentPage, setCurrentPage] = React.useState(1)
   const [postsPerPage] = React.useState(15)
-  const prod = "shoes"
+  const pro = "shirts"
   const dispatch = useDispatch()
   const getProduct = async () => {
     const response = await axios
       .get(
-        `https://serpapi.com/search.json?engine=walmart&query=${prod}&api_key=adf094f424eaf9d4a30af607e33833c06f551834dc546131c8125fff0876d7e9`
+        `https://serpapi.com/search.json?engine=walmart&query=${pro}&api_key=adf094f424eaf9d4a30af607e33833c06f551834dc546131c8125fff0876d7e9`
       )
       .catch(err => {
         console.log("ERRE", err)
@@ -43,6 +44,7 @@ const Product = () => {
 
   return (
     <>
+      <Navbar />
       <div className="grid_boxing">
         {currentPosts.map(product => {
           return (

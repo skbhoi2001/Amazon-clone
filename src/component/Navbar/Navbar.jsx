@@ -94,7 +94,7 @@ const options = [
   "Beauty",
   "Books",
 ]
-export default function Header() {
+export default function Navbar() {
   const { header, logo, menuButton, toolbar, drawerContainer } = useStyles()
   const [isAuth, setIsAuth] = useState(true)
   const [open, setOpen] = React.useState(false)
