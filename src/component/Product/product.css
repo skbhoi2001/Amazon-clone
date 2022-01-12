@@ -5,7 +5,9 @@ body {
 }
 .product_container {
   width: 320px;
-  height: 530px;
+  height: 490px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 40px;
 }
 .product_image {
   width: 67%;
@@ -62,6 +64,7 @@ body {
   color: #565959;
   font-size: 14px;
   line-height: 20px;
+  padding-bottom: 5px;
 }
 .product_span1 {
   font-weight: 700;
@@ -70,8 +73,9 @@ body {
 .grid_boxing {
   display: grid;
   width: 80%;
-  grid-gap: 89px;
-  grid-template-columns: 25% 25% 25%;
+  grid-gap: 35px;
+  justify-content: center;
+  grid-template-columns: 27% 27% 27%;
   margin: auto;
 }
 a {
