@@ -13,14 +13,17 @@ body {
 }
 .cart_first_container {
   height: 400px;
-  border: 1px solid rgb(219, 215, 215);
 
   padding: 10px;
 }
 .cart_second_container {
+  width: 20%;
   height: 270px;
   border: 1px solid rgb(219, 215, 215);
   padding: 20px;
+  float: right;
+  margin-top: -393px;
+  margin-right: 28px;
 }
 .cart_first_tag {
   font-weight: 400;
@@ -60,8 +63,10 @@ body {
   display: flex;
 }
 .cart_des_naming {
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 22px;
   font-weight: 500;
+  padding-right: 18px;
 }
 .cart_pricin {
   font-weight: 600;
@@ -107,4 +112,7 @@ body {
   border: none;
   font-size: 17px;
   background-color: rgb(247, 202, 0);
+}
+.cart_main_image {
+  width: 280px;
 }

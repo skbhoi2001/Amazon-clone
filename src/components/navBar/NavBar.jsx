@@ -5,8 +5,11 @@ import { NavLink } from "react-router-dom"
 import LocationOnIcon from "@mui/icons-material/LocationOn"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import SearchField from "./searchField/SearchField"
+import { useSelector } from "react-redux"
 
 const NavBar = () => {
+  const state = useSelector(state => state.addItems)
+
   return (
     <>
       <div className="navbar_main">
@@ -31,7 +34,7 @@ const NavBar = () => {
         <div className="navabar_flag_border">
           <img
             className="navbar_flag"
-            src="https://o.remove.bg/downloads/0e20bc18-82a9-4f0e-a0e3-f5a7b8f33553/kisspng-flag-of-india-national-flag-flag-of-the-united-sta-indian-flag-5ac111a1c091b6.6743178115226024017888-removebg-preview.png"
+            src="https://o.remove.bg/downloads/e3b2970e-cde2-408e-994d-8ca772b1e1ac/flag-of-india-national-flag-flag-of-the-united-states-indian-flag-thumbnail-removebg-preview.png"
             alt=""
           />
         </div>
@@ -45,7 +48,7 @@ const NavBar = () => {
               <ShoppingCartIcon className="navbar_cart" />
             </div>
             <div className="nav_top">
-              <span className="navbar_cart1">0</span>
+              <span className="navbar_cart1">{state.length}</span>
               <span className="navbar_cart1 cart2">Cart</span>
             </div>
           </div>

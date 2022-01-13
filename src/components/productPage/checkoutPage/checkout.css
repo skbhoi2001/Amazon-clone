@@ -1,0 +1,29 @@
+.checkout_main {
+  width: 75%;
+
+  height: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+.checout_headin {
+  font-weight: 400;
+  margin-top: 30px;
+}
+.checkout_addres {
+  width: 25%;
+}
+.check_para {
+  margin-top: -10px;
+}
+.check_para1 {
+  margin-top: -10px;
+  color: blue;
+}
+.check_btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(242, 202, 102);
+  border: 2px solid rgb(240, 191, 66);
+}
