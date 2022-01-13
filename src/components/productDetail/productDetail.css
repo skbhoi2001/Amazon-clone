@@ -1,0 +1,93 @@
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0f1111;
+}
+.productDetail_main {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 30% 20%;
+  grid-gap: 40px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.carousel .slider-wrapper {
+  width: 90%;
+  margin: auto;
+}
+.carousel .slide {
+  height: 65vh;
+}
+.carousel .slide img {
+  width: 520px;
+  height: fit-content;
+}
+.image {
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+.productDetail_heading {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.productDetail_save1 {
+  color: #565959;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 2px;
+  margin-top: -3px;
+}
+.productDetail_save2 {
+  color: #0f1111;
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 6px;
+}
+.productdetail_save3 {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #565959;
+  text-decoration: line-through;
+  padding-right: 6px;
+}
+.productdetail_save31 {
+  color: #565959;
+  font-size: 15px;
+}
+
+.productDetail_stock {
+  color: green;
+  font-size: 20px;
+}
+.productDetail_buttons {
+  display: flex;
+  flex-direction: column;
+}
+.productDetail_card {
+  border: 1px solid grey;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  height: 330px;
+}
+.productDetail_button1 {
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  color: #0f1111;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background-color: rgb(247, 202, 0);
+}
+.productDetail_button2 {
+  background-color: rgb(255, 164, 28);
+}
