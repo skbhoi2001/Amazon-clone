@@ -1,9 +1,12 @@
 import React from "react"
-import { LandingPage } from "../landingPage/LandingPage"
+
 import "./product.css"
 import Rating from "@mui/material/Rating"
-import ProductEach from "./productEach/ProductEach"
-export const Product = () => {
+
+import { ProductData } from "../../../db"
+import ProductEach from "../productEach/ProductEach"
+import { LandingPage } from "../../landingPage/LandingPage"
+export const Products = () => {
   return (
     <>
       <LandingPage />
@@ -55,7 +58,11 @@ export const Product = () => {
           <p>
             Price and other deatils may vary based on product size and color
           </p>
-          <ProductEach />
+          <div className="grid_boxing">
+            {ProductData.map(prod => (
+              <ProductEach data={prod} key={prod.id} />
+            ))}
+          </div>
         </div>
       </div>
     </>

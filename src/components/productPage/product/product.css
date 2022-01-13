@@ -42,3 +42,9 @@
 .product_show {
   padding: 20px;
 }
+.grid_boxing {
+  display: grid;
+  width: 100%;
+  grid-gap: 25px;
+  grid-template-columns: 30% 30% 30%;
+}

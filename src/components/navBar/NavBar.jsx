@@ -1,5 +1,6 @@
 import React from "react"
 import "./navbar.css"
+import { NavLink } from "react-router-dom"
 // material
 import LocationOnIcon from "@mui/icons-material/LocationOn"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
@@ -38,16 +39,21 @@ const NavBar = () => {
           <h4>Hello, Swetha</h4>
           <h3>Account & Lists</h3>
         </div>
-        <div className="navbar_hover">
-          <div>
-            <ShoppingCartIcon className="navbar_cart" />
+        <NavLink to={`/cart`}>
+          <div className="navbar_hover">
+            <div>
+              <ShoppingCartIcon className="navbar_cart" />
+            </div>
+            <div className="nav_top">
+              <span className="navbar_cart1">0</span>
+              <span className="navbar_cart1 cart2">Cart</span>
+            </div>
           </div>
-          <div className="nav_top">
-            <span className="navbar_cart1">0</span>
-            <span className="navbar_cart1 cart2">Cart</span>
-          </div>
-        </div>
+        </NavLink>
       </div>
+      <NavLink to={`/products`}>
+        <div>products</div>
+      </NavLink>
     </>
   )
 }
