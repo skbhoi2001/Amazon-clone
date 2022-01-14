@@ -38,10 +38,12 @@ const NavBar = () => {
             alt=""
           />
         </div>
-        <div className="navbar_deliacc account">
-          <h4>Hello, Swetha</h4>
-          <h3>Account & Lists</h3>
-        </div>
+        <NavLink to={`/signup`}>
+          <div className="navbar_deliacc account">
+            <h4>Hello, Swetha</h4>
+            <h3>Account & Lists</h3>
+          </div>
+        </NavLink>
         <NavLink to={`/cart`}>
           <div className="navbar_hover">
             <div>

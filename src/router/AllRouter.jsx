@@ -8,7 +8,8 @@ import PlacedSuccessPage from "../components/productPage/checkoutPage/placedSucc
 import ReviewPage from "../components/productPage/checkoutPage/reviewPage/ReviewPage"
 import { Products } from "../components/productPage/product/Product"
 import ProductDetail from "../components/productPage/productDetail/ProductDetail"
-
+import { Signup } from "../components/navBar/signupPage/Signup"
+import Login from "../components/navBar/loginPage/loginpage"
 function AllRouter() {
   return (
     <>
@@ -22,6 +23,8 @@ function AllRouter() {
           <Route exact path="/next" component={PaymentDetail} />
           <Route exact path="/next2" component={ReviewPage} />
           <Route exact path="/placed" component={PlacedSuccessPage} />
+          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </Router>
     </>
