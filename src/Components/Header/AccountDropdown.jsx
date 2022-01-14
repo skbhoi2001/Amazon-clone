@@ -2,6 +2,7 @@ import * as React from 'react';
 import "./Header.css";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import {Link} from "react-router-dom"
 
 export default function PositionedMenu({handleSignout}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -53,8 +54,8 @@ export default function PositionedMenu({handleSignout}) {
             </div>
             <div>
                 <MenuItem><h4>Your Account</h4></MenuItem>
-                <MenuItem><span>Your Account</span></MenuItem>
-                <MenuItem><span>Your Order</span></MenuItem>
+                <MenuItem><span> <Link to="./Account">Account</Link></span></MenuItem>
+                <MenuItem><span><Link to="./order">Order</Link></span></MenuItem>
                 <MenuItem><span>Prive Video</span></MenuItem>
                 <MenuItem><span>Seller Account</span></MenuItem>
                 <MenuItem><span>Subscribe</span></MenuItem>

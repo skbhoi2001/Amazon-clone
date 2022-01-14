@@ -35,12 +35,12 @@ function Header() {
         </div>
 
         <div className="header__nav_option">
-          <span className="header__nav_option_line1">Returns</span>
-          <span className="header__nav_option_line2">Orders</span>
+          <span className="header__nav_option_line1">Manage</span>
+          <Link to="./address"><span className="header__nav_option_line2">Address</span></Link>
         </div>
         <div className="header__nav_option">
           <span className="header__nav_option_line1">Returns</span>
-          <span className="header__nav_option_line2">Orders</span>
+          <Link to="./order"><span className="header__nav_option_line2">Order</span></Link>
         </div>
         <div className="header__nav_option">
           <span className="header__nav_option_line1">Your</span>
