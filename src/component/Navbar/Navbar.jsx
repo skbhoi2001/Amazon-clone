@@ -29,6 +29,7 @@ import React, { useState, useEffect } from "react"
 import { Link as RouterLink } from "react-router-dom"
 import SimpleDialogDemo from "./Location"
 import SearchBar from "./SearchBar"
+import Landing from "../../LandingPage/LandingMain/Landing"
 
 const isAuthTrue = [
   {
@@ -375,10 +376,13 @@ export default function Navbar() {
   }
 
   return (
-    <header>
-      <AppBar className={header}>
-        {mobileView ? displayMobile() : displayDesktop()}
-      </AppBar>
-    </header>
+    <>
+      <header>
+        <AppBar className={header}>
+          {mobileView ? displayMobile() : displayDesktop()}
+        </AppBar>
+      </header>
+      <Landing/>
+    </>
   )
 }
