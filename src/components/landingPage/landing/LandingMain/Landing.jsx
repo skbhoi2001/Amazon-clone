@@ -8,15 +8,14 @@ import { FetchRequest } from "../TodaysDeal/FetchRequest"
 
 const Landing = () => {
   return (
-    <div style={{backgroundColor:"#EAEDED"}}>
-      <ImageSlider slides={SliderData} />
-      <div style={{paddingTop:"460px"}} >
-          
-      <FetchRequest />
-      <MoreItemFetch/>
-      <MoreItemSection1/>
-      <MostSeller/>
-      </div>
+    <div style={{ backgroundColor: "#EAEDED" }}>
+      {/* <ImageSlider slides={SliderData} />
+      <div style={{ paddingTop: "460px" }}>
+        <FetchRequest />
+        <MoreItemFetch />
+        <MoreItemSection1 />
+        <MostSeller />
+      </div> */}
     </div>
   )
 }
