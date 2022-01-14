@@ -3,6 +3,7 @@ const ProductData = [
     id: 1,
     product: "laptop",
     img: "https://m.media-amazon.com/images/I/61LWeYHoXXL._AC_UY327_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 54849,
     price: 67931,
     description:
@@ -23,6 +24,7 @@ const ProductData = [
     id: 2,
     product: "laptop",
     img: "https://m.media-amazon.com/images/I/61BeBTB41DL._AC_UY327_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 29899,
     price: 59999,
     description:
@@ -43,6 +45,7 @@ const ProductData = [
     id: 3,
     product: "laptop",
     img: "https://m.media-amazon.com/images/I/71an9eiBxpL._AC_UY327_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 122900,
     price: 110900,
     description:
@@ -64,6 +67,7 @@ const ProductData = [
     id: 4,
     product: "footware",
     img: "https://m.media-amazon.com/images/I/61yPG8Hpv2S._AC_UL480_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 100,
     price: 500,
     description: "Centrino 2377 Casual-Men's Shoes",
@@ -81,6 +85,7 @@ const ProductData = [
     id: 5,
     product: "footware",
     img: "https://m.media-amazon.com/images/I/71WXgdmxWYL._AC_UL480_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 807,
     price: 2499,
     description: "SHOFIEE Girl's Black Fashion Sandal",
@@ -98,6 +103,7 @@ const ProductData = [
     id: 6,
     product: "footware",
     img: "https://m.media-amazon.com/images/I/81C+g+HbI+L._AC_UL480_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 350,
     price: 550,
     description: "BOOMER CUBS Kids Girls Lovely Floral Pattern Shoes",
@@ -116,6 +122,7 @@ const ProductData = [
     id: 7,
     product: "bottom",
     img: "https://m.media-amazon.com/images/I/81DIXSYgDgL._UL1500_.jpg",
+    quantity: 1,
     discount: 400,
     price: 500,
     description: "Cazibe Men's Relaxed Fit Track Pants",
@@ -134,6 +141,7 @@ const ProductData = [
     id: 8,
     product: "bottom",
     img: "https://m.media-amazon.com/images/I/41fUlGuMBQL._AC_UL480_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 699,
     price: 799,
     description:
@@ -151,6 +159,7 @@ const ProductData = [
     id: 9,
     product: "bottom",
     img: "https://m.media-amazon.com/images/I/81EW8Z8b5qL._AC_UL480_FMwebp_QL65_.jpg",
+    quantity: 1,
     discount: 699,
     price: 799,
     description:

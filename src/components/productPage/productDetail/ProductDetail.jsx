@@ -13,9 +13,8 @@ import { addItem, delItem } from "../../../redux/action"
 const ProductDetail = () => {
   const [cartBtn, setCartBtn] = useState("Add to Cart")
   const proid = useParams()
-  const proDetail = ProductData.filter(x => x.id == proid.id)
-  const prod = proDetail[0]
-  console.log(prod)
+  const prod = ProductData.find(x => x.id == proid.id)
+
   const dispatch = useDispatch()
   const handleCart = prod => {
     if (cartBtn === "Add to Cart") {
@@ -26,6 +25,11 @@ const ProductDetail = () => {
       setCartBtn("Add to Cart")
     }
   }
+  const handleqty = e => {
+    let qty = e.target.value
+    prod.quantity = qty
+  }
+  console.log(prod)
   return (
     <>
       <NavBar />
@@ -75,7 +79,11 @@ const ProductDetail = () => {
           </p>
           <div style={{ display: "flex" }}>
             <p style={{ paddingRight: "20px" }}>Quantity:</p>
-            <select name="" style={{ height: "20px", marginTop: "13px" }}>
+            <select
+              name=""
+              style={{ height: "20px", marginTop: "13px" }}
+              onChange={e => handleqty(e)}
+            >
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

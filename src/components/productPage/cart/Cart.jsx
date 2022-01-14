@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import NavBar from "../../navBar/NavBar"
 import Checkbox from "@material-ui/core/Checkbox"
 import "./cart.css"
@@ -9,6 +9,12 @@ import { NavLink } from "react-router-dom"
 
 const Cart = () => {
   const state = useSelector(state => state.addItems)
+  const [cartTotal, setCartTotal] = useState(0)
+  const [cartitem, setCartitems] = useState(0)
+  useEffect(() => {
+    setCartTotal(state.reduce((a, c) => a + c.discount * c.quantity, 0))
+    setCartitems(state.reduce((a, c) => a + Number(c.quantity), 0))
+  }, [])
   const dispatch = useDispatch()
   const handleClosed = item => {
     dispatch(delItem(item))
@@ -23,7 +29,9 @@ const Cart = () => {
         <div className="cart_sec_det">
           <div className="cart_cover">
             <h2 className="cart_des_naming">{cartItem.description}</h2>
-            <h2 className="cart_pricin">₹{cartItem.price}</h2>
+            <h2 className="cart_pricin">
+              ₹{cartItem.discount * cartItem.quantity}
+            </h2>
           </div>
           <p className="cart_p_tag">Eligible for free Shipping</p>
           <img
@@ -58,15 +66,18 @@ const Cart = () => {
   const emptyCart = () => {
     return (
       <>
-        <div>your caert is empty </div>
+        <div>
+          <h1>Your Amazon Cart is empty.</h1>
+          <h3>Check your Saved for later items below or continue shopping</h3>
+        </div>
       </>
     )
   }
+  console.log(state)
 
   return (
     <>
       <NavBar />
-      {state.length === 0 && emptyCart()}
 
       <div className="cart_main">
         <div className="cart_first_container">
@@ -76,8 +87,11 @@ const Cart = () => {
             <p className="cart_deselect_P2">Price</p>
           </div>
           {state.length !== 0 && state.map(cartItems)}
+          {state.length === 0 && emptyCart()}
           <div className="cart_subTot">
-            <p>Subtotal ({state.length} items): ₹ 1,2222</p>
+            <p>
+              Subtotal ({cartitem} items): ₹ {cartTotal}
+            </p>
           </div>
         </div>
       </div>
@@ -92,7 +106,9 @@ const Cart = () => {
           Your order iseligible for Free Delivery. Select this oprion at
           checkout. Details
         </p>
-        <h2>Subtotal ({state.length} items): ₹1,6333</h2>
+        <h2>
+          Subtotal ({cartitem} items): ₹ {cartTotal}
+        </h2>
         <div className="gift_section_cart">
           <input type="checkbox" />
           <p>This order contains a gift</p>

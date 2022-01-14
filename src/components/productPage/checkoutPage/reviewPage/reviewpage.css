@@ -29,7 +29,7 @@
   display: flex;
 
   align-items: center;
-  justify-content: space-between;
+
   margin-top: -16px;
 }
 .width_image {
@@ -38,12 +38,14 @@
   margin-top: -8px;
 }
 .review_main_cass {
-  width: 30%;
+  width: 50%;
 }
 .review_detail_maina {
   border: 1px solid grey;
   display: flex;
   padding-right: 20px;
+  height: 220px;
+  margin-bottom: -50px;
 }
 .review_detail_main_img {
   width: 90px;
@@ -61,11 +63,11 @@
   margin-top: -17px;
 }
 .OrderSummary_page {
-  width: 22%;
+  width: 28%;
   border: 1px solid grey;
-  float: right;
-  margin-top: -400px;
+
   padding: 20px;
+  margin-left: 130px;
 }
 .OrderSummary_page_button {
   width: 100%;
@@ -85,4 +87,13 @@
 .OrderSummary_page_Red_color {
   color: red;
   font-size: 18px;
+}
+.griding_spacing {
+  display: grid;
+  width: 150%;
+
+  grid-template-columns: 67% 75%;
+}
+.padding_top {
+  margin-top: -10px;
 }

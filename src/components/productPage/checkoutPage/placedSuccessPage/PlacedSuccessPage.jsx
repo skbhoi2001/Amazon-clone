@@ -1,7 +1,17 @@
 import React from "react"
+import { useSelector } from "react-redux"
+
 import NavBar from "../../../navBar/NavBar"
 import "./placedSucccess.css"
 const PlacedSuccessPage = () => {
+  const state = useSelector(state => state.addItems)
+  const successPage = img => {
+    return (
+      <div className="displaying_flecxing_imagwes">
+        <img className="img_success_widthing" src={img.img} alt="" />
+      </div>
+    )
+  }
   return (
     <>
       <NavBar />
@@ -30,13 +40,7 @@ const PlacedSuccessPage = () => {
                 <h4 className="Color_green">Thursday, 20 Jan</h4>
                 <p className="Pading12">Delivery date</p>
               </div>
-              <div className="displaying_flecxing_imagwes">
-                <img
-                  className="img_success_widthing"
-                  src="https://m.media-amazon.com/images/I/61KuMWWVwLL._AC_AA160_.jpg"
-                  alt=""
-                />
-              </div>
+              {state.length !== 0 && state.map(successPage)}
             </div>
           </div>
           <div>
