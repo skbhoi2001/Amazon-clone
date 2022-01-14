@@ -5,7 +5,7 @@ import Login from './Components/Authentication/Login.jsx'
 function App() {
   return (
     <div className="App">
-      <Signup />
+      <Login />
     </div>
   );
 }
