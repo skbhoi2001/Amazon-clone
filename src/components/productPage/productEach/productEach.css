@@ -74,12 +74,12 @@ body {
 
 .grid_boxing {
   display: grid;
-  width: 80%;
+
+  width: 94%;
   grid-gap: 35px;
-  justify-content: center;
+  justify-content: space-between;
   grid-template-columns: 27% 27% 27%;
   margin: auto;
-  margin-top: 117px;
 }
 
 a {

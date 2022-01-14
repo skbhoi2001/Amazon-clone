@@ -19,10 +19,12 @@ export const Products = () => {
   }
   // price
 
-  const handlePrice = p1 => {
+  const handlePrice = (p1, p2) => {
     console.log(p1)
     console.log(ProductData)
-    let pri = ProductData.filter(a => a.price <= p1)
+    let pri = ProductData.filter(a => a.discount > p1).filter(
+      a => a.discount <= p2
+    )
     setSelectedProd(pri)
     console.log(pri)
   }
@@ -41,14 +43,16 @@ export const Products = () => {
           <div>
             <h2 className="product_h2">price</h2>
             <div className="product_pricing">
-              <p className="product_p">All Prices</p>
-              <p className="product_p" onClick={() => handlePrice(500)}>
+              <p className="product_p" onClick={() => handleProductall()}>
+                All Prices
+              </p>
+              <p className="product_p" onClick={() => handlePrice(0, 500)}>
                 Under ₹500
               </p>
-              <p className="product_p" onClick={() => handlePrice(1000)}>
+              <p className="product_p" onClick={() => handlePrice(500, 1000)}>
                 ₹500-₹1,000
               </p>
-              <p className="product_p" onClick={() => handlePrice(2000)}>
+              <p className="product_p" onClick={() => handlePrice(1000, 2000)}>
                 ₹1,000-₹2,000
               </p>
             </div>
