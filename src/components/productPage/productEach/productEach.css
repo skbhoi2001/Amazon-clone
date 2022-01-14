@@ -4,10 +4,10 @@ body {
   line-height: 20px;
 }
 .product_container {
-  width: 300px;
-  height: 500px;
-  border-bottom: 2px solid lightgrey;
-  padding: 10px;
+  width: 320px;
+  height: 490px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 40px;
 }
 .product_image {
   width: 100%;
@@ -65,10 +65,21 @@ body {
   color: #565959;
   font-size: 14px;
   line-height: 20px;
+  padding-bottom: 5px;
 }
 .product_span1 {
   font-weight: 700;
   word-spacing: 0.2rem;
+}
+
+.grid_boxing {
+  display: grid;
+  width: 80%;
+  grid-gap: 35px;
+  justify-content: center;
+  grid-template-columns: 27% 27% 27%;
+  margin: auto;
+  margin-top: 117px;
 }
 
 a {

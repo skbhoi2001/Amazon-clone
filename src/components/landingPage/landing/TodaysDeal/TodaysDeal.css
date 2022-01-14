@@ -1,4 +1,44 @@
 .container{
-    display: flex;
-    border: 1px solid black;
+    width: 1600px;
+    margin-left: 30px;
+    padding-bottom: 50px;
+     /* padding-top: 600px; */
+     /* border: 20px solid black; */
+    
+}
+
+.container>h1{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.container>div{
+    height: 400px;
+    width:1600px;
+    /* padding: 15px; */
+    /* padding-bottom: 5px; */
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.out>img{
+    justify-content: center;
+    width: 300px;
+    padding-left: 20px;
+}
+.container>div>div{
+    font-size: 20px;
+    text-align: center;
+    /* margin-top: 20px; */
+  
+    justify-content: center;
+
+}
+
+.slick-prev:before {
+    color: black !important;
+    padding: 10px;
+}
+.slick-next:before{
+    color: black !important;
+    padding: 6px;
 }

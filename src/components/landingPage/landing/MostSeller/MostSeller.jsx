@@ -6,12 +6,12 @@ import { useEffect } from "react"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./TodaysDeal.css"
-export const FetchRequest = ()=>{
+import "../TodaysDeal/TodaysDeal.css"
+export const MostSeller = ()=>{
     const [state,setState] = React.useState([])
     const getData = async ()=>{
         try {
-            const response = await axios.get(`https://serpapi.com/search.json?engine=walmart&query=electronic&api_key=adf094f424eaf9d4a30af607e33833c06f551834dc546131c8125fff0876d7e9`)
+            const response = await axios.get(`https://serpapi.com/search.json?engine=walmart&query=jeans&api_key=adf094f424eaf9d4a30af607e33833c06f551834dc546131c8125fff0876d7e9`)
             console.log(response.data.organic_results)
             setState(response.data.organic_results)
             
@@ -52,7 +52,7 @@ export const FetchRequest = ()=>{
         <>
         
         <div className="container" style={{backgroundColor:"white"}}>
-              {/* <h1>Explore More Items</h1> */}
+              <h1 style={{marginTop:"15px"}}>Most Seller</h1>
             <Slider {...settings}>
         
            {
@@ -62,7 +62,7 @@ export const FetchRequest = ()=>{
                   
                    <div  className="out"> 
                         <img src={item.thumbnail} alt="image" />
-                        <div> ${item.primary_offer.offer_price}</div>
+                       
                     </div>
                    
                 ))
