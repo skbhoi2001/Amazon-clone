@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux"
 const ProductDetail = () => {
   const { product_id } = useParams()
   const product = useSelector(state => state.product)
-  console.log(product_id)
+
   const dispatch = useDispatch()
   console.log(product)
   const value = 4
@@ -26,13 +26,13 @@ const ProductDetail = () => {
       .catch(err => {
         console.log(err)
       })
-    console.log(response.data.product_result)
+
     dispatch(selectedProduct(response.data.product_result))
   }
   useEffect(() => {
-    if (product_id && product_id !== "") fetchProductDetail()
+    fetchProductDetail()
   }, [product_id])
-
+  console.log(product)
   return (
     <>
       {/* <div className="productDetail_main" key={product.product_id}>
