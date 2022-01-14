@@ -356,7 +356,9 @@ function Signup() {
           Help{" "}
         </a>
       </Box>
-      <div style={{ fontSize: "0.7rem", margin: "0.7rem" }}>
+      <div
+        style={{ fontSize: "0.7rem", margin: "0.7rem", textAlign: "center" }}
+      >
         © 1996-2022, Amazon.com, Inc. or its affiliates
       </div>
     </>

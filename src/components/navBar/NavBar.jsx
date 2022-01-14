@@ -13,12 +13,14 @@ const NavBar = () => {
   return (
     <>
       <div className="navbar_main">
-        <div className="navbar_img ">
-          <img
-            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            alt=""
-          />
-        </div>
+        <NavLink to={"/"}>
+          <div className="navbar_img ">
+            <img
+              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt=""
+            />
+          </div>
+        </NavLink>
         <span className="navbar_in">.in</span>
         <div className="navbar_address">
           <LocationOnIcon className="navbar_location" />
@@ -56,9 +58,29 @@ const NavBar = () => {
           </div>
         </NavLink>
       </div>
-      <NavLink to={`/products`}>
-        <div>products</div>
-      </NavLink>
+      <div className="main_second_navbar">
+        <div className="display_Navbar_bottom">
+          <NavLink to={`/products`}>
+            <p style={{ color: "white" }} className="p_hovering">
+              All
+            </p>{" "}
+          </NavLink>
+          <p className="p_hovering">Fresh</p>
+          <p className="p_hovering">Amazon Pay</p>
+          <p className="p_hovering">Gift Cards</p>
+          <p className="p_hovering">Buy Again</p>
+          <p className="p_hovering">Health,Household & Personal Care</p>
+          <p className="p_hovering">Home Improvement</p>
+          <p className="p_hovering">AmazonBasics</p>
+        </div>
+        <div>
+          <img
+            className="img_logo "
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/JANART22/T1/SWM_400x39_2days._CB648813239_.jpg"
+            alt=""
+          />
+        </div>
+      </div>
     </>
   )
 }

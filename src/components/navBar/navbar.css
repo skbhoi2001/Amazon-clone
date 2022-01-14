@@ -148,3 +148,28 @@ body {
   margin-left: 20px;
   border-radius: 5px;
 }
+.display_Navbar_bottom {
+  display: flex;
+  width: 75%;
+  margin-bottom: -30px;
+  justify-content: space-evenly;
+  color: white;
+}
+.main_second_navbar {
+  background-color: rgb(35, 47, 62);
+  height: 53px;
+  display: flex;
+}
+.p_hovering {
+  width: fit-content;
+  padding: 4px 8px;
+  height: 20px;
+}
+
+.p_hovering:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.img_logo {
+  margin-top: 6px;
+}

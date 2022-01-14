@@ -6,6 +6,7 @@ import Rating from "@mui/material/Rating"
 import { ProductData } from "../../../db"
 import ProductEach from "../productEach/ProductEach"
 import { LandingPage } from "../../landingPage/LandingPage"
+import NavBar from "../../navBar/NavBar"
 export const Products = () => {
   const [selectedProd, setSelectedProd] = useState(ProductData)
   // product
@@ -35,8 +36,8 @@ export const Products = () => {
   }
   return (
     <>
-      <LandingPage />
-      <div className="product_heading"></div>
+      <NavBar />
+
       <div className="product_main">
         <div className="product_filter">
           <h2 className="product_h2 borderBottom">Filters</h2>

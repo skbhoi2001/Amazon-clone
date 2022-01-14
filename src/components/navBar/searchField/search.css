@@ -43,3 +43,27 @@ body {
   justify-content: center;
   border-radius: 0px 5px 5px 0px;
 }
+.dropDown_search {
+  width: 730px;
+  height: 200px;
+
+  margin-left: 53px;
+  overflow-y: hidden;
+  position: relative;
+  display: none;
+}
+.item_listShow {
+  height: 23px;
+  border: 1px solid grey;
+  border-bottom: 1px solid black;
+  background-color: #fff;
+
+  padding: 14px;
+}
+.item_listShow:hover {
+  background-color: rgb(211, 211, 211);
+}
+.inputing:focus,
+.dropDown_search {
+  display: block;
+}
