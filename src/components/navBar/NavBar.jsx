@@ -34,11 +34,7 @@ const NavBar = () => {
           <SearchField />
         </div>
         <div className="navabar_flag_border">
-          <img
-            className="navbar_flag"
-            src="https://o.remove.bg/downloads/e3b2970e-cde2-408e-994d-8ca772b1e1ac/flag-of-india-national-flag-flag-of-the-united-states-indian-flag-thumbnail-removebg-preview.png"
-            alt=""
-          />
+          <img className="navbar_flag" src="./flag.png" alt="" />
         </div>
         <NavLink to={`/signup`}>
           <div className="navbar_deliacc account">

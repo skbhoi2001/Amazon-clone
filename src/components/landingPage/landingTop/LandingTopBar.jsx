@@ -39,7 +39,7 @@ const ImageSlider = ({ slides }) => {
                   height: "800px",
                   padding: "5px",
                   marginLeft: "48px",
-                  marginTop: "130px",
+                  marginTop: "200px",
                 }}
               />
             )}

@@ -7,7 +7,7 @@ export const LandingPage = () => {
   return (
     <div>
       <NavBar />
-      <MainLanding />
+      {/* <MainLanding /> */}
     </div>
   )
 }
