@@ -1,0 +1,83 @@
+.slider {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 22%;
+  right: 32px;
+  font-size: 3rem;
+  /* font-weight: lighter; */
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 22%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 1;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 5;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.container {
+  width: 96%;
+  margin-left: 30px;
+}
+
+.container > h1 {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.container > div {
+  height: 243px;
+  width: 100%;
+  /* padding: 15px; */
+  /* padding-bottom: 5px; */
+  background-color: white;
+  border: 1px solid black;
+
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.out > img {
+  justify-content: center;
+  width: 300px;
+  padding-left: 20px;
+}
+.container > div > div {
+  font-size: 20px;
+  text-align: center;
+  /* margin-top: 20px; */
+
+  justify-content: center;
+}
+
+.slick-prev:before {
+  color: black !important;
+  padding: 10px;
+}
+.slick-next:before {
+  color: black !important;
+  padding: 6px;
+}
