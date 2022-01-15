@@ -58,10 +58,12 @@ const useStyles = makeStyles({
 var height = 27
 export default function Login() {
   const [detail, setDetail] = useState("")
+  const [isAuth,setIsAuth] = useState(false)
   // const [paths, setPaths] = useState("/Login")
   const classes = useStyles()
 
   const handleGet = () => {
+    setIsAuth(true)
     axios.get("http://localhost:8000/data").then(resp => {
       if (resp.data[0].email !== detail) {
         alert("Please register first")

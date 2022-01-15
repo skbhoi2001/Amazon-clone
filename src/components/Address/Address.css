@@ -1,0 +1,135 @@
+.profile {
+    padding: 0.8rem 8.5rem;
+  }
+  
+  .profile__optionsContainer {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile__header {
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+  }
+  
+  .profile__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add_btn{
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+  }
+  .add_btn_main{
+    width: 100%;
+    background-color: rgb(213, 211, 211);
+    padding: 5px;
+    border: 1px dotted black;
+    text-decoration: none;
+  }
+  .add_btn_plus{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding: 0;
+    margin: 0%;
+    
+  }
+  .add_btn_text{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(145, 141, 141);
+    
+  }
+
+  .form_heading{
+    width: 30%;
+    margin: auto;
+  }
+  .form_data{
+    padding-top:30px ;
+    width: 35%;
+    margin: auto;
+  }
+
+  .form_data>div{
+    padding: 5px;
+    margin: 1% 0 1% 0;
+    width: 100%;
+    /* background-color: rgb(240, 240, 240); */
+  }
+  .form_data>div>label{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 5% 0 5%;
+  }
+  .form_dropdown{
+    width: 91%;
+    margin: 0.5% 4.5% 0 4.5%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+  }
+  .form_data>div>input{
+    width: 90%;
+    margin: 0.5% 5% 0 5%;
+    height: 25px;
+    border-radius: 5px;
+    
+  }
+  .form_button{
+    width: 20%;
+    margin: 0 5% 0 5%;
+    height: 30px;
+    background-color: #f0c14b;
+    border: 0;
+    border-radius: 5px;
+  }
+  .form_some>h4,.form_some>p{
+    width: 91%;
+    margin: 0 4.5% 0 4.5%;
+  }
+
+  .add_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .address_display{
+    width: 30%;
+    margin: 1.5%;
+    background-color: rgb(247, 247, 246);
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .address_button_delete{
+    background-color: rgb(242, 238, 239);
+    border: 0px;
+    margin: 3px;
+  }
+  .address_button_continue{
+    border: 0px;
+    background-color:#f0c14b ;
+    padding: 9px;
+    border-radius: 3px;
+    margin: 3px;
+
+  }
+  .page{
+    width: 20%;
+    margin: auto;
+  }
+  .page>button{
+    width: 40%;
+    margin: 5%;
+  }

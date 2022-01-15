@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { NavLink } from "react-router-dom"
+import ReviewAddress from "./reviewAddress"
 import "./reviewpage.css"
 const ReviewPage = () => {
   const state = useSelector(state => state.addItems)
   const [cartTotal, setCartTotal] = useState(0)
+  
 
   useEffect(() => {
     setCartTotal(state.reduce((a, c) => a + c.discount * c.quantity, 0))
+    
   }, [])
   console.log(state)
   const reviewItem = item => {
@@ -54,7 +57,8 @@ const ReviewPage = () => {
         </p>
         <div className="griding_spacing">
           <div className="review_detail_maina">
-            <div className="review_detail_add">
+            <ReviewAddress/>
+            {/* <div className="review_detail_add">
               <h3 className="review_h3">Shipping address</h3>
               <p className="review_p">Swetha V</p>
               <p className="review_p">#15</p>
@@ -65,7 +69,7 @@ const ReviewPage = () => {
               <p className="review_p">india</p>
               <p className="review_p">Phone : 7892839931</p>
               <p className="review_pAdd">Add delivery instructions</p>
-            </div>
+            </div> */}
             <div className="review_detail_add">
               <h3 className="review_h3">Payment method</h3>
               <p className="review_p">Pay on delivery (Cash/Card)</p>

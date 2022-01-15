@@ -1,7 +1,26 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import "./checkout.css"
+
+
 const CheckOutPage = () => {
+  const [data, setData] = useState([]);
+  const getData = () => {
+    fetch(
+      `https://masai-react-assignment.herokuapp.com/AddressLocal`
+    )
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res.length)
+        setData([...res]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  useEffect(()=>{
+    getData()
+  },[])
   return (
     <>
       <div className="checkout_main">
@@ -17,7 +36,7 @@ const CheckOutPage = () => {
         </p>
         <hr />
 
-        <div className="checkout_addres">
+        {/* <div className="checkout_addres">
           <h3>Swetha V</h3>
           <p className="check_para">#15</p>
           <p className="check_para">
@@ -28,8 +47,25 @@ const CheckOutPage = () => {
           <button className="check_btn">
             <NavLink to="/next">Delivery to this address</NavLink>
           </button>
-        </div>
-      </div>
+        </div>*/}
+      
+      {
+        data.map((item)=>{
+          return(
+            <div className="checkout_addres">
+              <h3>{item.name}</h3>
+              <p>{item.address1},{item.address2},{item.address3}</p>
+              <p>{item.pin}</p>
+              <p className="check_para"> India</p>
+              <p className="check_para1">Add delivery instructions</p>
+              <button className="check_btn">
+                <NavLink to="/next">Delivery to this address</NavLink>
+              </button>
+            </div>
+          )
+        })
+      }
+      </div> 
     </>
   )
 }

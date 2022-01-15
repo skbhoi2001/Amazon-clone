@@ -11,6 +11,10 @@ import ProductDetail from "../components/productPage/productDetail/ProductDetail
 import { Signup } from "../components/navBar/signupPage/Signup"
 import Login from "../components/navBar/loginPage/loginpage"
 import { LandingPage } from "../components/landingPage/LandingPage"
+import Account from "../components/Account/Account"
+import Address from "../components/Address/Address"
+import AddressMain from "../components/Address/AddressMain"
+import AddAddress from "../components/Address/AddAddress"
 function AllRouter() {
   return (
     <>
@@ -26,6 +30,9 @@ function AllRouter() {
           <Route exact path="/placed" component={PlacedSuccessPage} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/account" component={Account} />
+          <Route exact path="/address" component={Address} />
+          <Route exact path="/addAddress" component={AddAddress} />
         </Switch>
       </Router>
     </>

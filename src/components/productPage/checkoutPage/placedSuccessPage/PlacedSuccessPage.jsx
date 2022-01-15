@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import Footer from "../../../navBar/footer/Footer"
 
@@ -6,6 +6,23 @@ import NavBar from "../../../navBar/NavBar"
 import "./placedSucccess.css"
 const PlacedSuccessPage = () => {
   const state = useSelector(state => state.addItems)
+  const [data, setData] = useState([]);
+  const getData = () => {
+    fetch(
+      `https://masai-react-assignment.herokuapp.com/AddressLocal`
+    )
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res.length)
+        setData([...res]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  useEffect(()=>{
+    getData()
+  },[])
   const successPage = img => {
     return (
       <div className="displaying_flecxing_imagwes">
@@ -21,8 +38,26 @@ const PlacedSuccessPage = () => {
           <div>
             <h3 className="green_heading">Order placed, thank you!</h3>
             <p>Confirmation will be sent to your email.</p>
-
-            <h4 className="success_aligningitems">
+            {
+              data.map((item)=>{
+                return(
+                  <div>
+                    <h4 className="success_aligningitems">
+              Shipping to{" "}
+              <span>
+                <h4>-{item.name}</h4>
+              </span>,
+              <span>
+                <h4>
+                  {item.address1},{item.address2},{item.address3}
+                </h4>
+              </span>{" "}
+            </h4>
+                  </div>
+                )
+              })
+            }
+            {/* <h4 className="success_aligningitems">
               Shipping to{" "}
               <span>
                 <h4>Swetha V,</h4>
@@ -34,7 +69,7 @@ const PlacedSuccessPage = () => {
                   KARNATAKE,562130
                 </h4>
               </span>{" "}
-            </h4>
+            </h4> */}
             <hr />
             <div className="success_align_flexing_items">
               <div className="success_align_flexing_items_padding">

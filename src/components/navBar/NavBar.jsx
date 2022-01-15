@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./navbar.css"
 import { NavLink } from "react-router-dom"
 // material
@@ -6,10 +6,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import SearchField from "./searchField/SearchField"
 import { useSelector } from "react-redux"
+import PositionedMenu from "./AccountDropdown"
 
 const NavBar = () => {
   const state = useSelector(state => state.addItems)
-
+  const [isAuth,setIsAuth] = useState(true)  
+  const handleLogout = () =>{
+      setIsAuth(false)
+  }
   return (
     <>
       <div className="navbar_main">
@@ -36,12 +40,12 @@ const NavBar = () => {
         <div className="navabar_flag_border">
           <img className="navbar_flag" src="./flag.png" alt="" />
         </div>
-        <NavLink to={`/signup`}>
+        {/* <NavLink to={`/signup`}> */}
           <div className="navbar_deliacc account">
             <h4>Hello, Swetha</h4>
-            <h3>Account & Lists</h3>
+            <h3><PositionedMenu handleSignout={handleLogout}/></h3>
           </div>
-        </NavLink>
+        {/* </NavLink> */}
         <NavLink to={`/cart`}>
           <div className="navbar_hover">
             <div>

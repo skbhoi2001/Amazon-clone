@@ -116,7 +116,7 @@ const Cart = () => {
           <input type="checkbox" />
           <p>This order contains a gift</p>
         </div>
-        <NavLink to="/checkout">
+        <NavLink to="/address">
           <button className="pay_button_cart">Proceed to Buy</button>
         </NavLink>
       </div>
