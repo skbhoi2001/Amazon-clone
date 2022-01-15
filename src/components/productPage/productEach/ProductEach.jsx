@@ -4,20 +4,10 @@ import Rating from "@mui/material/Rating"
 import StarIcon from "@mui/icons-material/Star"
 import "./productEach.css"
 import { NavLink } from "react-router-dom"
+import Pagination1 from "../pagination/Pagination"
+import { ProductData } from "../../../db"
 
-//import Pagination1 from "../pagination/Pagination"
-const ProductEach = ({ data }) => {
-  //   const products = useSelector(state => state.allProducts.products)
-  //   const [currentPage, setCurrentPage] = React.useState(1)
-  //   const [postsPerPage] = React.useState(15)
-  // Get current posts
-  //const indexOfLastPost = currentPage * postsPerPage
-  //const indexOfFirstPost = indexOfLastPost - postsPerPage
-  //const currentPosts = products.slice(indexOfFirstPost, indexOfLastPost)
-
-  // Change page
-  //const paginate = pageNumber => setCurrentPage(pageNumber)
-
+const ProductEach = ({ data, postsPerPage, totalPosts, paginate }) => {
   return (
     <>
       <NavLink to={`/products/${data.id}`}>
@@ -52,11 +42,11 @@ const ProductEach = ({ data }) => {
           </div>
         </div>
       </NavLink>
-      {/* <Pagination1
+      <Pagination1
         postsPerPage={postsPerPage}
-        totalPosts={products.length}
+        totalPosts={ProductData.length}
         paginate={paginate}
-      /> */}
+      />
     </>
   )
 }

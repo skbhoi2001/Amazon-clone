@@ -9,6 +9,7 @@ import { NavLink, useParams } from "react-router-dom"
 import { ProductData } from "../../../db"
 import { useDispatch } from "react-redux"
 import { addItem, delItem } from "../../../redux/action"
+import Footer from "../../navBar/footer/Footer"
 
 const ProductDetail = () => {
   const [cartBtn, setCartBtn] = useState("Add to Cart")
@@ -105,6 +106,7 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

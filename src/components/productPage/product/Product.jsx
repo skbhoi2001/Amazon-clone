@@ -5,10 +5,21 @@ import Rating from "@mui/material/Rating"
 
 import { ProductData } from "../../../db"
 import ProductEach from "../productEach/ProductEach"
-import { LandingPage } from "../../landingPage/LandingPage"
+
 import NavBar from "../../navBar/NavBar"
+import Pagination1 from "../pagination/Pagination"
+
 export const Products = () => {
-  const [selectedProd, setSelectedProd] = useState(ProductData)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [postsPerPage] = React.useState(10)
+
+  const indexOfLastPost = currentPage * postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const currentPosts = ProductData.slice(indexOfFirstPost, indexOfLastPost)
+
+  const paginate = pageNumber => setCurrentPage(pageNumber)
+  console.log(paginate)
+  const [selectedProd, setSelectedProd] = useState(currentPosts)
   // product
   const handleProduct = prod => {
     console.log(prod)
@@ -125,7 +136,13 @@ export const Products = () => {
           </p>
           <div className="grid_boxing">
             {selectedProd.map(prod => (
-              <ProductEach data={prod} key={prod.id} />
+              <ProductEach
+                data={prod}
+                key={prod.id}
+                postsPerPage={postsPerPage}
+                totalPosts={ProductData.length}
+                paginate={paginate}
+              />
             ))}
           </div>
         </div>

@@ -6,6 +6,7 @@ import "./cart.css"
 import { useDispatch, useSelector } from "react-redux"
 import { delItem } from "../../../redux/action"
 import { NavLink } from "react-router-dom"
+import Footer from "../../navBar/footer/Footer"
 
 const Cart = () => {
   const state = useSelector(state => state.addItems)
@@ -119,6 +120,7 @@ const Cart = () => {
           <button className="pay_button_cart">Proceed to Buy</button>
         </NavLink>
       </div>
+      <Footer />
     </>
   )
 }

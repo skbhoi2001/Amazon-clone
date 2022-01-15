@@ -1,5 +1,6 @@
 import React from "react"
 import { useSelector } from "react-redux"
+import Footer from "../../../navBar/footer/Footer"
 
 import NavBar from "../../../navBar/NavBar"
 import "./placedSucccess.css"
@@ -52,6 +53,7 @@ const PlacedSuccessPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
