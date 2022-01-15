@@ -98,7 +98,7 @@ export default function AddressInput({ onTaskCreate }) {
           />
         </div>
         <div>
-          <label>Address:</label>
+          <label>Address 1:</label>
           <input
             type="text"
             placeholder="Address"
@@ -108,7 +108,7 @@ export default function AddressInput({ onTaskCreate }) {
           />
         </div>
         <div>
-          <label>Address:</label>
+          <label>Address 2:</label>
           <input
             type="text"
             placeholder="Address"
@@ -118,7 +118,7 @@ export default function AddressInput({ onTaskCreate }) {
           />
         </div>
         <div>
-          <label>Address:</label>
+          <label>Address 3:</label>
           <input
             type="text"
             placeholder="Address"
@@ -129,7 +129,7 @@ export default function AddressInput({ onTaskCreate }) {
         </div>
 
         <div>
-          <label>NAme:</label>
+          <label>State:</label>
           <input
             type="text"
             placeholder="State"
