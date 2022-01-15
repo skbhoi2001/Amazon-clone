@@ -11,7 +11,7 @@ export const MoreItemSection1 = ()=>{
     const [state,setState] = React.useState([])
     const getData = async ()=>{
         try {
-            const response = await axios.get(`https://serpapi.com/search.json?engine=walmart&query=bestSeller&api_key=adf094f424eaf9d4a30af607e33833c06f551834dc546131c8125fff0876d7e9`)
+            const response = await axios.get(`https://serpapi.com/search.json?engine=walmart&query=bestSeller&api_key=553a91d893834e300d0fd9775fb2c67c180c04ebabdca991027c948cc595cce2`)
             console.log(response.data.organic_results)
             setState(response.data.organic_results)
             

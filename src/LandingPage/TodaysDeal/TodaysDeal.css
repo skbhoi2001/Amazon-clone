@@ -1,7 +1,7 @@
 .container{
     width: 1600px;
     margin-left: 30px;
-   
+    /* border: 1px solid black; */
     
 }
 
@@ -10,23 +10,25 @@
     padding-top: 15px;
 }
 .container>div{
-    height: 400px;
+    height: 350px;
     width:1600px;
     /* padding: 15px; */
     /* padding-bottom: 5px; */
     background-color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .out>img{
     justify-content: center;
-    width: 300px;
-    padding-left: 20px;
+    width: 250px;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 35px;
 }
 .container>div>div{
     font-size: 20px;
     text-align: center;
-    /* margin-top: 20px; */
+   
   
     justify-content: center;
 
@@ -35,8 +37,17 @@
 .slick-prev:before {
     color: black !important;
     padding: 10px;
+    /* font-size: 30px; */
+    height: 50px;
+    width: 50px;
+  
+    border-radius: 1px solid black;
 }
 .slick-next:before{
     color: black !important;
     padding: 6px;
 }
+
+
+
+
