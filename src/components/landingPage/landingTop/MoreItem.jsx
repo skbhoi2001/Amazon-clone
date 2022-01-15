@@ -11,7 +11,7 @@ export const MoreItemFetch = () => {
   const getData = async () => {
     try {
       const response = await axios.get(
-        `https://serpapi.com/search.json?engine=walmart&query=vitamins&api_key=adf094f424eaf9d4a30af607e33833c06f551834dc546131c8125fff0876d7e9`
+        `https://serpapi.com/search.json?engine=walmart&query=vitamins&api_key=553a91d893834e300d0fd9775fb2c67c180c04ebabdca991027c948cc595cce2`
       )
       console.log(response.data.organic_results)
       setState(response.data.organic_results)
@@ -27,7 +27,7 @@ export const MoreItemFetch = () => {
     infinite: true,
     speed: 1000,
     arrows: true,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 5,
 
     responsive: [
@@ -50,12 +50,15 @@ export const MoreItemFetch = () => {
   return (
     <>
       <div className="container" style={{ backgroundColor: "white" }}>
-        <h1>More Item To Explore</h1>
+        <h1 className="cont_h1_tag">More Item To Explore</h1>
         <Slider {...settings}>
           {state.map(item => (
             <div className="out">
-              <img src={item.thumbnail} alt="image" />
-              <div> ${item.primary_offer.offer_price}</div>
+              <img className="img_more_item" src={item.thumbnail} alt="ima" />
+              <div className="Price_item">
+                {" "}
+                ${item.primary_offer.offer_price}
+              </div>
             </div>
           ))}
         </Slider>
