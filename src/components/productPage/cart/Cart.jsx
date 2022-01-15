@@ -123,7 +123,7 @@ const Cart = () => {
           <button className="pay_button_cart">Proceed to Buy</button>
         </NavLink>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

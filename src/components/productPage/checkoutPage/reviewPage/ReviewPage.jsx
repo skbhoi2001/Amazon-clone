@@ -76,7 +76,7 @@ const ReviewPage = () => {
             </div>
           </div>
           <div className="OrderSummary_page">
-            <NavLink to="/placed" onClick={localStorage.clear()}>
+            <NavLink to="/placed">
               <button className="OrderSummary_page_button">
                 Place your order
               </button>
