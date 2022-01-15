@@ -9,8 +9,8 @@ import NavBar from "../navBar/NavBar"
 const MainLanding = () => {
   return (
     <>
-      <NavBar />
-      <div style={{ backgroundColor: "#EAEDED" }}>
+      {/* <NavBar /> */}
+      {/* <div style={{ backgroundColor: "#EAEDED" }}>
         <ImageSlider slides={SliderData} />
         <div style={{ paddingTop: "460px" }}>
           <FetchRequest />
@@ -18,7 +18,7 @@ const MainLanding = () => {
           <MoreItemSection1 />
           <MostSeller />
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

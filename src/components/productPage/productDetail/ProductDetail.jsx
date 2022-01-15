@@ -45,7 +45,9 @@ const ProductDetail = () => {
         </div>
         <div>
           <div>
-            <h1 className="productDetail_heading">{prod.description}</h1>
+            <h1 className="productDetail_heading">
+              {prod.description.split(" ").splice(0, 19).join(" ")}
+            </h1>
             <Rating
               name="text-feedback"
               value={prod.rating}

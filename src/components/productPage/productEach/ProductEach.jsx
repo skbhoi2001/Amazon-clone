@@ -24,7 +24,10 @@ const ProductEach = ({ data }) => {
         <div className="product_container" key={data.id}>
           <img className="product_image" src={data.img} alt="item.title" />
           <div style={{ padding: "10px" }}>
-            <p className="products_p1">{data.title}</p>
+            <p className="products_p1">
+              {data.title.split(" ").splice(0, 9).join(" ")}...
+            </p>
+
             <Rating
               name="text-feedback"
               value={data.rating}

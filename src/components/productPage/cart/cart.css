@@ -58,9 +58,11 @@ body {
 .cart_sec_det {
   margin: 10px;
   padding: 10px;
+  width: 64%;
 }
 .cart_cover {
   display: flex;
+  justify-content: space-between;
 }
 .cart_des_naming {
   font-size: 17px;
@@ -70,6 +72,7 @@ body {
 }
 .cart_pricin {
   font-weight: 600;
+  float: right;
 }
 .cart_p_tag {
   margin-top: -10px;
@@ -84,6 +87,7 @@ body {
   padding-right: 10px;
   font-size: 13px;
   color: teal;
+  cursor: pointer;
 }
 .cart_subTot {
   display: flex;
@@ -112,6 +116,7 @@ body {
   border: none;
   font-size: 17px;
   background-color: rgb(247, 202, 0);
+  cursor: pointer;
 }
 .cart_main_image {
   width: 280px;

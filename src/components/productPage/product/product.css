@@ -32,11 +32,16 @@ body {
 .product_p {
   width: fit-content;
   background-color: lightgrey;
+
   height: fit-content;
   padding: 9px;
   margin-right: 20px;
   border-radius: 9px;
   margin-top: -10px;
+  cursor: pointer;
+}
+.product_p:hover {
+  border: 1px solid black;
 }
 .product_pricing {
   display: flex;

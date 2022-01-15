@@ -17,7 +17,9 @@ const ReviewPage = () => {
         <div className="review_detail_main">
           <img className="review_detail_main_img" src={item.img} alt="" />
           <div className="review_main_cass">
-            <p className="review_desc">{item.description}</p>
+            <p className="review_desc">
+              {item.description.split(" ").splice(0, 19).join(" ")}
+            </p>
             <div className="review_desc_price_tag">
               <p className="padding_p_tag1">₹{item.price}</p>
               <p className="padding_p1_tag2">₹{item.discount}</p>

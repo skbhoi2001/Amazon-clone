@@ -35,7 +35,9 @@ const SearchField = () => {
         {searc.map(item => {
           return (
             <NavLink to={`/products/${item.id}`}>
-              <div className="item_listShow">{item.title} </div>
+              <div className="item_listShow">
+                {item.title.split(" ").splice(0, 9).join(" ")}{" "}
+              </div>
             </NavLink>
           )
         })}

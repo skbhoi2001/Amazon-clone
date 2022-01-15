@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import { LandingPage } from "../Components/landingPage/LandingPage"
+
 import Cart from "../components/productPage/cart/Cart"
 import CheckOutPage from "../components/productPage/checkoutPage/CheckOutPage"
 import PaymentDetail from "../components/productPage/checkoutPage/payment/PaymentDetail"
@@ -10,6 +10,7 @@ import { Products } from "../components/productPage/product/Product"
 import ProductDetail from "../components/productPage/productDetail/ProductDetail"
 import { Signup } from "../components/navBar/signupPage/Signup"
 import Login from "../components/navBar/loginPage/loginpage"
+import { LandingPage } from "../components/landingPage/LandingPage"
 function AllRouter() {
   return (
     <>

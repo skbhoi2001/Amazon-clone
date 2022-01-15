@@ -28,7 +28,9 @@ const Cart = () => {
         </div>
         <div className="cart_sec_det">
           <div className="cart_cover">
-            <h2 className="cart_des_naming">{cartItem.description}</h2>
+            <h2 className="cart_des_naming">
+              {cartItem.description.split(" ").splice(0, 19).join(" ")}
+            </h2>
             <h2 className="cart_pricin">
               ₹{cartItem.discount * cartItem.quantity}
             </h2>
@@ -113,9 +115,9 @@ const Cart = () => {
           <input type="checkbox" />
           <p>This order contains a gift</p>
         </div>
-        <button className="pay_button_cart">
-          <NavLink to="/checkout">Proceed to Buy</NavLink>
-        </button>
+        <NavLink to="/checkout">
+          <button className="pay_button_cart">Proceed to Buy</button>
+        </NavLink>
       </div>
     </>
   )

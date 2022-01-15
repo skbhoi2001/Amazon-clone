@@ -34,6 +34,7 @@ export const Products = () => {
     let rat = ProductData.filter(a => a.rating > value)
     setSelectedProd(rat)
   }
+
   return (
     <>
       <NavBar />
@@ -47,14 +48,20 @@ export const Products = () => {
               <p className="product_p" onClick={() => handleProductall()}>
                 All Prices
               </p>
-              <p className="product_p" onClick={() => handlePrice(0, 500)}>
-                Under ₹500
+              <p className="product_p" onClick={() => handlePrice(0, 1000)}>
+                Under ₹1000
               </p>
-              <p className="product_p" onClick={() => handlePrice(500, 1000)}>
-                ₹500-₹1,000
+              <p className="product_p" onClick={() => handlePrice(1000, 3000)}>
+                ₹1,000-₹3,000
               </p>
-              <p className="product_p" onClick={() => handlePrice(1000, 2000)}>
-                ₹1,000-₹2,000
+              <p className="product_p" onClick={() => handlePrice(3000, 6000)}>
+                ₹3,000-₹6,000
+              </p>
+              <p
+                className="product_p"
+                onClick={() => handlePrice(6000, 199000)}
+              >
+                ₹6,000 above
               </p>
             </div>
           </div>
