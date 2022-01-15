@@ -13,9 +13,10 @@ import MenuItem from '@mui/material/MenuItem';
 import { orange, brown } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from "axios";
-import {Link} from "react-router-dom"
+import {Link, Redirect} from "react-router-dom"
 import amazon from "./amazon.png"
 import Signup from "./Signup"
+import { browserHistory } from 'react-router'
 const { palette } = createTheme();
 const theme = createTheme({
     palette: {
@@ -73,8 +74,8 @@ export default function Login() {
             alert("Please register first")
             return
         }
-
-       
+        // browserHistory.push("/login")
+    
     });
    }
 

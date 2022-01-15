@@ -6,6 +6,21 @@
       "mobile": "+91 6261699668",
       "password": "Abc@123",
       "id": 1
+    },
+    {
+      "email": "raja@email.com",
+      "name": "Raja Choudhary",
+      "mobile": "+91 454545",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "raja@email.com",
+      "name": "Raja Choudhary",
+      "mobile": "+91 454545",
+      "password": "123456",
+      "id": 3
     }
+    
   ]
 }
