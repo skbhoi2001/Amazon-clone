@@ -9,7 +9,8 @@ import { useSelector } from "react-redux"
 
 const NavBar = () => {
   const state = useSelector(state => state.addItems)
-
+  //const list = JSON.parse(localStorage.getItem("addItem"))
+  console.log(state)
   return (
     <>
       <div className="navbar_main">

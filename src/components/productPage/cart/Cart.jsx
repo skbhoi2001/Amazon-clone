@@ -10,12 +10,13 @@ import Footer from "../../navBar/footer/Footer"
 
 const Cart = () => {
   const state = useSelector(state => state.addItems)
+  console.log("updatedcart", state)
   const [cartTotal, setCartTotal] = useState(0)
   const [cartitem, setCartitems] = useState(0)
   useEffect(() => {
     setCartTotal(state.reduce((a, c) => a + c.discount * c.quantity, 0))
     setCartitems(state.reduce((a, c) => a + Number(c.quantity), 0))
-  }, [])
+  }, [state])
   const dispatch = useDispatch()
   const handleClosed = item => {
     dispatch(delItem(item))
@@ -91,11 +92,13 @@ const Cart = () => {
           </div>
           {state.length !== 0 && state.map(cartItems)}
           {state.length === 0 && emptyCart()}
-          <div className="cart_subTot">
-            <p>
-              Subtotal ({cartitem} items): ₹ {cartTotal}
-            </p>
-          </div>
+          {state.length !== 0 && (
+            <div className="cart_subTot">
+              <p>
+                Subtotal ({cartitem} items): ₹ {cartTotal}
+              </p>
+            </div>
+          )}
         </div>
       </div>
       <div className="cart_second_container">

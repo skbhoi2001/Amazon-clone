@@ -59,8 +59,7 @@ const ReviewPage = () => {
               <p className="review_p">Swetha V</p>
               <p className="review_p">#15</p>
               <p className="review_p">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus perferendis
+                basaveshwara layout kadabgere cross Bangalore
               </p>
               <p className="review_p">india</p>
               <p className="review_p">Phone : 7892839931</p>
@@ -77,7 +76,7 @@ const ReviewPage = () => {
             </div>
           </div>
           <div className="OrderSummary_page">
-            <NavLink to="/placed">
+            <NavLink to="/placed" onClick={localStorage.clear()}>
               <button className="OrderSummary_page_button">
                 Place your order
               </button>

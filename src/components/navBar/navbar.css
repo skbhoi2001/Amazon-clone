@@ -142,7 +142,7 @@ body {
 }
 .navabar_flag_border:hover {
   width: 40px;
-  border: 1px solid white;
+  outline: 1px solid white;
   height: 46px;
   margin-top: 10px;
   margin-left: 20px;
@@ -164,6 +164,7 @@ body {
   width: fit-content;
   padding: 4px 8px;
   height: 20px;
+  border: 1px solid transparent;
 }
 
 .p_hovering:hover {
