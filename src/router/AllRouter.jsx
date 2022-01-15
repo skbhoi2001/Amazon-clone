@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import { LandingPage } from "../components/landingPage/LandingPage"
+import { LandingPage } from "../Components/landingPage/LandingPage"
 import Cart from "../components/productPage/cart/Cart"
 import CheckOutPage from "../components/productPage/checkoutPage/CheckOutPage"
 import PaymentDetail from "../components/productPage/checkoutPage/payment/PaymentDetail"
