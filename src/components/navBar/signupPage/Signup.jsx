@@ -13,7 +13,7 @@ import MenuItem from "@mui/material/MenuItem"
 import { orange, brown } from "@mui/material/colors"
 import { createTheme, ThemeProvider } from "@mui/material/styles"
 import axios from "axios"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 const { palette } = createTheme()
 const theme = createTheme({
@@ -299,9 +299,9 @@ function Signup() {
             }}
           >
             Already have an account ?{" "}
-            <a href="#" style={{ textDecoration: "none" }}>
+            <Link to={'./login'}><a href="#" style={{ textDecoration: "none" }}>
               Sign in
-            </a>{" "}
+            </a></Link>{" "}
           </div>
         </Box>
         <Box>

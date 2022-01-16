@@ -10,9 +10,12 @@ import PositionedMenu from "./AccountDropdown"
 
 const NavBar = () => {
   const state = useSelector(state => state.addItems)
-  const [isAuth,setIsAuth] = useState(true)  
+  const [isAuth,setIsAuth] = useState(false)  
   const handleLogout = () =>{
       setIsAuth(false)
+  }
+  const handleLogin = () =>{
+      setIsAuth(true)
   }
   return (
     <>
@@ -28,11 +31,12 @@ const NavBar = () => {
         <span className="navbar_in">.in</span>
         <div className="navbar_address">
           <LocationOnIcon className="navbar_location" />
-
+          <NavLink to={`./address`}>
           <div className="navbar_deli">
             <h4>Deliver to Swetha</h4>
             <h3>Bengaluru 562130</h3>
           </div>
+          </NavLink>
         </div>
         <div className="navbar_search">
           <SearchField />

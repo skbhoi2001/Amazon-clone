@@ -61,7 +61,7 @@ export default function PositionedMenu({handleSignout}) {
                 <MenuItem><span>Manage Device</span></MenuItem>
                 <MenuItem><span>Switch Account</span></MenuItem>
                 <br />
-                <MenuItem onClick={handleOut}><span>Signout</span></MenuItem>
+                <Link to={'./signup'}><MenuItem><span>Signout</span></MenuItem></Link>
             </div>
         </div>
       </Menu>
