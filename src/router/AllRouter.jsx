@@ -1,16 +1,16 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
-import Cart from "../components/productPage/cart/Cart"
-import CheckOutPage from "../components/productPage/checkoutPage/CheckOutPage"
-import PaymentDetail from "../components/productPage/checkoutPage/payment/PaymentDetail"
-import PlacedSuccessPage from "../components/productPage/checkoutPage/placedSuccessPage/PlacedSuccessPage"
-import ReviewPage from "../components/productPage/checkoutPage/reviewPage/ReviewPage"
-import { Products } from "../components/productPage/product/Product"
-import ProductDetail from "../components/productPage/productDetail/ProductDetail"
-import { Signup } from "../components/navBar/signupPage/Signup"
-import Login from "../components/navBar/loginPage/loginpage"
-import { LandingPage } from "../components/landingPage/LandingPage"
+import Cart from "../Components/productPage/cart/Cart"
+import CheckOutPage from "../Components/productPage/checkoutPage/CheckOutPage"
+import PaymentDetail from "../Components/productPage/checkoutPage/payment/PaymentDetail"
+import PlacedSuccessPage from "../Components/productPage/checkoutPage/placedSuccessPage/PlacedSuccessPage"
+import ReviewPage from "../Components/productPage/checkoutPage/reviewPage/ReviewPage"
+import { Products } from "../Components/productPage/product/Product"
+import ProductDetail from "../Components/productPage/productDetail/ProductDetail"
+import { Signup } from "../Components/navBar/signupPage/Signup"
+import Login from "../Components/navBar/loginPage/loginpage"
+import { LandingPage } from "../Components/landingPage/LandingPage"
 function AllRouter() {
   return (
     <>
