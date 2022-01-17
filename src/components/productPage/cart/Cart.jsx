@@ -82,6 +82,7 @@ const Cart = () => {
     <>
       <NavBar />
 
+      <div >
       <div className="cart_main">
         <div className="cart_first_container">
           <h1 className="cart_first_tag">Shopping Cart</h1>
@@ -120,7 +121,10 @@ const Cart = () => {
           <button className="pay_button_cart">Proceed to Buy</button>
         </NavLink>
       </div>
-      <Footer />
+      </div>
+      <div  >
+      {/* <Footer  /> */}
+      </div>
     </>
   )
 }

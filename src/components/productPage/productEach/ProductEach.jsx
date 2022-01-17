@@ -42,11 +42,11 @@ const ProductEach = ({ data, postsPerPage, totalPosts, paginate }) => {
           </div>
         </div>
       </NavLink>
-      <Pagination1
+      {/* <Pagination1
         postsPerPage={postsPerPage}
         totalPosts={ProductData.length}
         paginate={paginate}
-      />
+      /> */}
     </>
   )
 }

@@ -40,9 +40,9 @@ const PaymentDetail = () => {
           </div>
         </div>
         <div className="final_review">
-          <button className="final_review_button">
-            <NavLink to="/next2">Continue</NavLink>
-          </button>
+         <NavLink to="/next2"> <button className="final_review_button">
+            Continue
+          </button></NavLink>
           <p className="final_review_button_p">
             You can review this order before it's final.
           </p>

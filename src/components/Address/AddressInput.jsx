@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import { v4 as uuid } from "uuid";
+import NavBar from "../navBar/NavBar";
 import "./Address.css"
 export default function AddressInput({ onTaskCreate }) {
   const initialState = {
@@ -37,6 +38,7 @@ export default function AddressInput({ onTaskCreate }) {
 
   return (
     <div>
+      <NavBar/>
         <div className="form_heading">
         <h2>Add a new Address</h2>
         </div>

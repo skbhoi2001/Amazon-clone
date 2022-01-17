@@ -194,6 +194,8 @@ function Signup() {
           <TextField
             color="warning"
             placeholder="Mobile number"
+            type="tel"
+            
             inputProps={{
               style: {
                 height: 27,
@@ -219,6 +221,7 @@ function Signup() {
           </label>
           <TextField
             color="warning"
+            type="email"
             inputProps={{
               style: {
                 height,
@@ -241,6 +244,7 @@ function Signup() {
             Password
           </label>
           <TextField
+            type="password"
             color="warning"
             value={password}
             onChange={e => setPassword(e.target.value)}

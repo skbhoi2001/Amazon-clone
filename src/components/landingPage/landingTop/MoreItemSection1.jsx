@@ -11,7 +11,7 @@ export const MoreItemSection1 = () => {
   const getData = async () => {
     try {
       const response = await axios.get(
-        `https://serpapi.com/search.json?engine=walmart&query=bestSeller&api_key=553a91d893834e300d0fd9775fb2c67c180c04ebabdca991027c948cc595cce2`
+        `https://serpapi.com/search.json?engine=walmart&query=bestSeller&api_key=21770f584339aa616d242af76ea182f9e23ef676f5c5c724203845b9146ba9b5`
       )
       console.log(response.data.organic_results)
       setState(response.data.organic_results)
