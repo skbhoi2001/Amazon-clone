@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# AMAZON_CLONE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+End to end E-commerce website with having functionality like Login/Register, View Home Page, Prducts with filter product on basics, search product, view product , add product to cart, address page with add address, payment page with checkout page.
+            
+## Tech Stack
 
-## Available Scripts
+### 1. React Js
+### 2. React Redux
+### 3. Context Api
+### 4. Styled Components
+### 5. JSON Server
+
+## Team Members
+
+### 1. Soumyak Kumar Bhoi
+### 2. Swetha V
+### 3. Raja Choudhary
+### 4. Akash Dwivedi
+
+
+## Functionality
+
+### 1. Login SignUp
+### 2. Home Page with slider
+### 3. Product Page
+### 4. Search Product
+### 5. View Product with product 
+### 6. Explore Page
+### 7. Chat Property
+### 8. Responsiveness
+
+
+## Pages Built and steps to run the project
+
+First step clone the repository using the git command - git clone https://github.com/swethav08711/Amazon-clone
+
+Go to PharmEasy Folder git command - cd Instagram_clone/instagram_clone
+
+click on pages folder
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Landing Page
+If new user enter in the system then the user will redirect to the login page
+![r](https://raw.githubusercontent.com/skbhoi2001/Instagram_clone/main/instagram_clone/images/login.png)
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/signup.png?raw=true)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Home Page
+If user complete the authentication process then it will com to the home page
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/home.png?raw=true)
 
-### `npm test`
+### 3. Explore Page
+Here user see all the top rated posts 
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/explore%20page.png?raw=true)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Profile Page
+Here the logedIn user see all the data
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/profile%20page.png?raw=true)
 
-### `npm run build`
+### 4. Edit Page
+Here user can edit the items
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/edit%20profile.png?raw=true)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 5. Change Password
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/change%20password.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 6. Search Bar
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/change%20password.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 7. Search Result
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/searchResult.png?raw=true)
 
-### `npm run eject`
+### 8. Post
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/post1.png?raw=true)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 9. Post Filter
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/postFilter.png?raw=true)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 10. Chat Page
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/chat.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 11. Dropdown and logout
+![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/dropdown.png?raw=true)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Have a look on this link :- https://instaclonesrc.netlify.app/
