@@ -24,17 +24,17 @@ End to end E-commerce website with having functionality like Login/Register, Vie
 ### 2. Home Page with slider
 ### 3. Product Page
 ### 4. Search Product
-### 5. View Product with product 
-### 6. Explore Page
-### 7. Chat Property
-### 8. Responsiveness
+### 5. View Product 
+### 6. Address Page
+### 7. Payment Page
+### 8. Order Success Page
 
 
 ## Pages Built and steps to run the project
 
-First step clone the repository using the git command - git clone https://github.com/swethav08711/Amazon-clone
+First step clone the repository using the git command - git clone https://github.com/skbhoi2001/Amazon-clone.git
 
-Go to PharmEasy Folder git command - cd Instagram_clone/instagram_clone
+Go to PharmEasy Folder git command - cd Amazon_clone
 
 click on pages folder
 
@@ -42,48 +42,39 @@ In the project directory, you can run:
 
 ### `npm start`
 
-### 1. Landing Page
+### 1. Login SignUp
+New User or the current user has to login or signup to enter into system
 If new user enter in the system then the user will redirect to the login page
-![r](https://raw.githubusercontent.com/skbhoi2001/Instagram_clone/main/instagram_clone/images/login.png)
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/signup.png?raw=true)
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/signup.png?raw=true)
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/login.png?raw=true)
 
-### 2. Home Page
-If user complete the authentication process then it will com to the home page
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/home.png?raw=true)
+### 2. Home Page 
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/landing.png?raw=true)
 
-### 3. Explore Page
-Here user see all the top rated posts 
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/explore%20page.png?raw=true)
-
-### 3. Profile Page
-Here the logedIn user see all the data
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/profile%20page.png?raw=true)
-
-### 4. Edit Page
-Here user can edit the items
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/edit%20profile.png?raw=true)
-
-### 5. Change Password
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/change%20password.png?raw=true)
-
-### 6. Search Bar
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/change%20password.png?raw=true)
-
-### 7. Search Result
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/searchResult.png?raw=true)
-
-### 8. Post
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/post1.png?raw=true)
-
-### 9. Post Filter
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/postFilter.png?raw=true)
-
-### 10. Chat Page
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/chat.png?raw=true)
+### 3. Product Page
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/productPageWithFilter.png?raw=true)
 
 
-### 11. Dropdown and logout
-![r](https://github.com/skbhoi2001/Instagram_clone/blob/main/instagram_clone/images/dropdown.png?raw=true)
+### 4. Search Product
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/searchProduct.png?raw=true)
+
+### 5. View Product with product 
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/speceficProductPage.png?raw=true)
+
+### 6. Cart Page
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/cartPage.png?raw=true)
+
+### 7. Address Page
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/addressInput.png?raw=true)
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/addressPage.png?raw=true)
+
+### 8. Payment Page
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/paymentPage.png?raw=true)
+
+### 9. Order Success Page
+![r](https://github.com/skbhoi2001/Amazon-clone/blob/development/images/orderSuccessful.png?raw=true)
 
 
-Have a look on this link :- https://instaclonesrc.netlify.app/
+
+
+Have a look on this link :- https://amazonclonerass.netlify.app/
